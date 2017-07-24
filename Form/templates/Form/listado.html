@@ -1,0 +1,19 @@
+{% extends 'Form/base.html' %}
+
+{% block content %}
+    {% for list in lists %}
+        <div class="datos">
+            <div class="nombre">
+                <h6>{{ list.nombre }}</h6>
+            </div>
+            <div class="numero">
+                <p> {{ list.numero }} </p>
+            </div>
+        </div>
+    {% endfor %}
+    <div>
+        <form role ="search" method="GET" class="search-form" action="resultado">
+        <button type="submit" class="save btn btn-default">Buscar</button>
+        </form>
+    </div>
+{% endblock %}

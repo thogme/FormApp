@@ -1,0 +1,12 @@
+{% extends 'Form/base.html' %}
+
+{% block content %}
+    <h1>Datos sin número</h1>
+    {% for busqueda in busquedas %}
+        <div class="datos">
+            <div class="nombre">
+                <h6>{{ busqueda.nombre }}</h6>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
